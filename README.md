@@ -8,3 +8,4 @@
 #### lab2:  shell源码
 #### lab3:  linux内核模块源码
 #### lab4:  fat16实现源码
+p.s. lab3, lab4含有附加题实现，并且附加分都拿满了。
