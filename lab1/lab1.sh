@@ -22,7 +22,7 @@ tar -jxvf busybox-1.32.1.tar.bz2
 cd linux-4.9.263
 echo -e "\033[32m 编译参数因人而异可能会占用大量空间。这里直接应用vlab参数，编译1.2G版本(基本不含驱动)。按任意键以继续... \033[0m"
 read cho9
-wget http://222.186.10.65:8080/directlink/3/.config
+wget https://raw.githubusercontent.com/pipixia244/USTC_OS/master/term2021/lab1/.config
 echo -e "\033[32m 即将开始编译。按任意键以继续... \033[0m"
 read cho1
 make -j $((`nproc`-1))
@@ -32,7 +32,7 @@ echo -e "\033[32m 开始编译busybox。按任意键以继续... \033[0m"
 cd ../busybox-1.32.1
 echo -e "\033[32m 直接应用编译参数。按任意键以继续... \033[0m"
 read pre1
-wget http://222.186.10.65:8080/directlink/3/.config.busy -O .config
+wget https://raw.githubusercontent.com/pipixia244/USTC_OS/master/term2021/lab1/.config -O .config
 echo -e "\033[32m 即将开始编译。按任意键以继续... \033[0m"
 read cho2
 make -j $((`nproc`-1))
